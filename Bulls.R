@@ -57,7 +57,7 @@ get_guess <- function(i){
       }
     }
   }
-  return(NULL) # Return NULL if the input is wrong
+  return(NA) # Return NA if the input is wrong
 }
 
 number_bulls_and_cows <- function(computer_choice, user_choice){
@@ -111,13 +111,14 @@ bulls_and_cows <- function(){
   computer_choice <- generate_computer_vector()
   while(n_guess <= 10 && won == FALSE){
     user_choice <- get_guess(n_guess)
-    if(is.null(user_choice)){
+    if(is.na(user_choice)){
       print("Input error for 1 time. 2 more chances.")
       user_choice <- get_guess(n_guess)
-      if(is.null(user_choice)){
+      if(is.na(user_choice)){
         print("Input error for 2 times. Last chance.")
         user_choice <- get_guess(n_guess)
-        if(is.null(user_choice)){
+        if(is.na(user_choice)){
+          print("3 consecutive input errors. Game terminated.")
           return() # Exit the program
         }
       }
