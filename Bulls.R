@@ -6,6 +6,7 @@
 n_bull <- 0
 n_guess <- 1
 
+# Check the LENGTH of inputs, and these inputs are all INTEGERS.
 four_nr <- function(user_input){
   if(length(user_input)==4 & is.integer(user_input)){
     for(i in 1:4){
@@ -17,6 +18,7 @@ four_nr <- function(user_input){
   return(FALSE)
 }
 
+# Check if integers are IN RANGE 0~9 (e.g. 11 is a wrong number)
 in_range <- function(user_input){
   for(i in 1:4){
     if(user_input[i] > 9){
@@ -28,6 +30,7 @@ in_range <- function(user_input){
   return(TRUE)
 }
 
+# Check if the numbers are REPEATED
 no_overlap <- function(user_input){
   if(user_input[1] == user_input[2]) return(FALSE)
   if(user_input[1] == user_input[3]) return(FALSE)
