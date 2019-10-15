@@ -2,8 +2,8 @@
 for STAT37810
 
 
-#I am making another change
+# Assignment 2
 
-Testing testing. Attenzione. Achtung. Attencion.
+Welcome Ms. Burbank!
 
-Atletico de Madrid
+Please see the file "Bulls.R" for the bulls and cows game.
