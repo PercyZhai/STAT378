@@ -1,0 +1,26 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+Homes <- read.csv("homes.csv")
+attach(Homes)
+Sell
+```
+```{r}
+v1<-iris[[2]]
+v2<-iris$Sepal.Width
+v3<-iris[["Sepal.Width"]]
+all.equal(v1,v2)
+```
+
+```{r}
+hist(Homes[["Sell"]], main="Selling Price Histogram")
+```
+
+```{r}
+plot(Homes[["Sell"]],Homes[["List"]],xlab="Selling Price", ylab="List")
+```
+
+
