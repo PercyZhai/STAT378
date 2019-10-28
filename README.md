@@ -2,8 +2,8 @@
 for STAT37810
 
 
-# Assignment 2
+# Assignment 4
 
 Welcome Ms. Burbank!
 
-Please see the file "Bulls.R" for the bulls and cows game.
+Please see the folder "Assignment 4" for three python scripts for the three problems.
